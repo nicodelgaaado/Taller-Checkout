@@ -145,10 +145,10 @@ export default function Home() {
         <div className="mx-auto grid w-full max-w-[1120px] grid-cols-1 gap-6 px-4 sm:px-6 lg:grid-cols-[1.7fr_0.8fr] lg:px-10">
           <article className="overflow-hidden rounded-md bg-white shadow-[0_14px_34px_rgba(16,26,88,0.1)]">
             <div className="flex flex-col items-start justify-between gap-3 px-6 pb-5 pt-8 sm:flex-row sm:items-center sm:px-10">
-              <h2 className="text-3xl font-extrabold leading-none text-[#192654] sm:text-[2rem]">
+              <h2 className="text-xl font-extrabold leading-none text-[#192654] sm:text-[1.45rem] lg:text-[1.3rem]">
                 Order items
               </h2>
-              <button className="inline-flex items-center gap-2 text-sm font-bold text-[#222f73] sm:text-base">
+              <button className="inline-flex items-center gap-2 text-sm font-bold text-[#222f73] sm:text-[0.95rem]">
                 <Pencil size={16} />
                 Edit shopping cart
               </button>
@@ -165,22 +165,22 @@ export default function Home() {
                   <ProductThumb type={product.image} />
 
                   <div className="min-w-0 flex-1">
-                    <h3 className="text-xl font-extrabold leading-tight text-[#1f2f71] sm:text-[1.4rem] lg:text-[1.25rem]">
+                    <h3 className="text-lg font-extrabold leading-tight text-[#1f2f71] sm:text-[1.2rem] lg:text-[1.1rem]">
                       {product.name}
                     </h3>
-                    <p className="mt-1 text-sm font-semibold text-[#54607e] sm:text-base lg:whitespace-nowrap">
+                    <p className="mt-1 text-sm font-semibold text-[#54607e] sm:text-[0.93rem] lg:whitespace-nowrap">
                       {product.details}
                     </p>
-                    <p className="mt-1 text-sm font-bold text-[#3f4d73] sm:text-base">
+                    <p className="mt-1 text-sm font-bold text-[#3f4d73] sm:text-[0.93rem]">
                       {product.quantity}
                     </p>
                   </div>
 
                   <div className="text-left sm:text-right">
-                    <p className="text-4xl font-extrabold leading-none text-[#1f2f70] sm:text-[2rem] lg:text-[1.85rem]">
+                    <p className="text-3xl font-extrabold leading-none text-[#1f2f70] sm:text-[1.7rem] lg:text-[1.55rem]">
                       {product.total}
                     </p>
-                    <p className="mt-2 text-lg font-bold leading-none text-[#626d8c] sm:mt-3 sm:text-xl lg:text-lg">
+                    <p className="mt-2 text-base font-bold leading-none text-[#626d8c] sm:mt-3 sm:text-[1rem] lg:text-[0.95rem]">
                       {product.unit}
                     </p>
                   </div>
@@ -189,7 +189,7 @@ export default function Home() {
             </div>
 
             <div className="mt-3 border-t border-[#e9edf6] bg-[#f6f7fb] px-6 py-6 text-center sm:px-10">
-              <button className="text-base font-bold text-[#222f73] sm:text-[1.65rem]">
+              <button className="text-sm font-bold text-[#222f73] sm:text-[1rem]">
                 Have discount code? Click to enter it.
               </button>
             </div>
@@ -197,19 +197,19 @@ export default function Home() {
 
           <aside className="space-y-6">
             <article className="rounded-md bg-white px-6 pb-7 pt-8 shadow-[0_14px_34px_rgba(16,26,88,0.1)] sm:px-8">
-              <h2 className="text-3xl font-extrabold leading-none text-[#192654] sm:text-[2rem]">
+              <h2 className="text-xl font-extrabold leading-none text-[#192654] sm:text-[1.45rem] lg:text-[1.3rem]">
                 Summary
               </h2>
-              <p className="mt-4 text-base font-semibold leading-snug text-[#5a6484] sm:text-[1.2rem]">
-                The total cost consist of the tax, insurance and the delivery
-                charge.
+              <p className="mt-4 max-w-[260px] text-sm font-semibold leading-6 text-[#5a6484] sm:text-[0.95rem]">
+                <span className="block">The total cost consist of the tax,</span>
+                <span className="block">insurance and the delivery charge.</span>
               </p>
 
               <div className="mt-5 space-y-4">
                 {summaryRows.map((row) => (
                   <div
                     key={row.label}
-                    className="flex items-center justify-between gap-3 text-xl sm:text-[1.4rem]"
+                    className="flex items-center justify-between gap-3 text-base sm:text-[1.05rem]"
                   >
                     <span className="font-bold text-[#4f5b7f]">{row.label}</span>
                     <span className="font-extrabold text-[#24317a]">{row.value}</span>
@@ -218,14 +218,14 @@ export default function Home() {
               </div>
 
               <div className="my-6 border-t border-[#e9edf6]" />
-              <div className="flex items-center justify-between text-[1.55rem] font-extrabold text-[#1a2652] sm:text-[1.8rem]">
+              <div className="flex items-center justify-between text-xl font-extrabold text-[#1a2652] sm:text-[1.25rem]">
                 <span>TOTAL:</span>
                 <span>€ 75.24</span>
               </div>
             </article>
 
             <article className="flex items-center justify-between rounded-md bg-white px-6 py-7 shadow-[0_14px_34px_rgba(16,26,88,0.1)] sm:px-8">
-              <h2 className="text-3xl font-extrabold text-[#192654] sm:text-[2rem]">
+              <h2 className="text-xl font-extrabold text-[#192654] sm:text-[1.45rem] lg:text-[1.3rem]">
                 Delivery
               </h2>
               <button className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#d6dced] text-[#24317a]">
@@ -233,7 +233,7 @@ export default function Home() {
               </button>
             </article>
 
-            <button className="h-16 w-full rounded-md bg-[#121f8f] text-xl font-bold text-white shadow-[0_10px_24px_rgba(14,28,131,0.3)] transition hover:bg-[#0e1978] sm:text-[1.45rem]">
+            <button className="h-16 w-full rounded-md bg-[#121f8f] text-lg font-bold text-white shadow-[0_10px_24px_rgba(14,28,131,0.3)] transition hover:bg-[#0e1978] sm:text-[1.1rem]">
               Next step
             </button>
           </aside>
@@ -249,12 +249,12 @@ export default function Home() {
               <span className="mx-auto inline-flex h-10 w-10 items-center justify-center text-[#efb347]">
                 <LockKeyhole size={32} strokeWidth={1.7} />
               </span>
-              <h3 className="mt-4 text-3xl font-extrabold text-[#1c2956] sm:text-[2rem]">
+              <h3 className="mt-4 text-2xl font-extrabold text-[#1c2956] sm:text-[1.45rem]">
                 Your information is Safe
               </h3>
-              <p className="mx-auto mt-3 max-w-[280px] text-base font-semibold text-[#5a6484] sm:text-[1.2rem]">
-                The total cost consist of the tax, insurance and the delivery
-                charge.
+              <p className="mx-auto mt-3 max-w-[310px] text-sm font-semibold leading-6 text-[#5a6484] sm:text-[0.95rem]">
+                <span className="block">The total cost consist of the tax,</span>
+                <span className="block">insurance and the delivery charge.</span>
               </p>
             </article>
 
@@ -262,12 +262,12 @@ export default function Home() {
               <span className="mx-auto inline-flex h-10 w-10 items-center justify-center text-[#efb347]">
                 <ShieldCheck size={32} strokeWidth={1.7} />
               </span>
-              <h3 className="mt-4 text-3xl font-extrabold text-[#1c2956] sm:text-[2rem]">
+              <h3 className="mt-4 text-2xl font-extrabold text-[#1c2956] sm:text-[1.45rem]">
                 Secure checkout
               </h3>
-              <p className="mx-auto mt-3 max-w-[280px] text-base font-semibold text-[#5a6484] sm:text-[1.2rem]">
-                The total cost consist of the tax, insurance and the delivery
-                charge.
+              <p className="mx-auto mt-3 max-w-[310px] text-sm font-semibold leading-6 text-[#5a6484] sm:text-[0.95rem]">
+                <span className="block">The total cost consist of the tax,</span>
+                <span className="block">insurance and the delivery charge.</span>
               </p>
             </article>
 
@@ -275,12 +275,12 @@ export default function Home() {
               <span className="mx-auto inline-flex h-10 w-10 items-center justify-center text-[#efb347]">
                 <Headphones size={32} strokeWidth={1.7} />
               </span>
-              <h3 className="mt-4 text-3xl font-extrabold text-[#1c2956] sm:text-[2rem]">
+              <h3 className="mt-4 text-2xl font-extrabold text-[#1c2956] sm:text-[1.45rem]">
                 24/7 Support
               </h3>
-              <p className="mx-auto mt-3 max-w-[280px] text-base font-semibold text-[#5a6484] sm:text-[1.2rem]">
-                The total cost consist of the tax, insurance and the delivery
-                charge.
+              <p className="mx-auto mt-3 max-w-[310px] text-sm font-semibold leading-6 text-[#5a6484] sm:text-[0.95rem]">
+                <span className="block">The total cost consist of the tax,</span>
+                <span className="block">insurance and the delivery charge.</span>
               </p>
             </article>
           </div>
@@ -289,4 +289,3 @@ export default function Home() {
     </main>
   );
 }
-
