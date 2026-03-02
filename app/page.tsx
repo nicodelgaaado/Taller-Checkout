@@ -3,11 +3,11 @@ import {
   Check,
   Headphones,
   LockKeyhole,
-  Menu,
   Pencil,
   Plus,
   ShieldCheck,
 } from "lucide-react";
+import AnimatedYear from "./components/animated-year";
 
 type Product = {
   id: number;
@@ -82,6 +82,15 @@ function ProductThumb({ type }: { type: Product["image"] }) {
 const stepCircleClass =
   "inline-flex h-8 w-8 items-center justify-center rounded-full text-sm font-extrabold leading-none";
 
+function TwoLineMenuIcon() {
+  return (
+    <span aria-hidden className="inline-flex h-5 w-6 flex-col justify-between">
+      <span className="block h-0.5 w-full rounded-full bg-current" />
+      <span className="block h-0.5 w-full rounded-full bg-current" />
+    </span>
+  );
+}
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#eef1f7] text-[#1c2956]">
@@ -92,9 +101,9 @@ export default function Home() {
               <ArrowLeft size={16} />
               Go Back
             </button>
-            <p className="text-4xl font-extrabold tracking-[0.16em]">2018</p>
-            <button className="rounded-md p-2 text-white/90">
-              <Menu size={24} />
+            <AnimatedYear />
+            <button className="rounded-md p-2 text-white/90" aria-label="Open menu">
+              <TwoLineMenuIcon />
             </button>
           </header>
 
