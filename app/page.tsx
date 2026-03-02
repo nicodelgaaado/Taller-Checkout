@@ -165,22 +165,22 @@ export default function Home() {
                   <ProductThumb type={product.image} />
 
                   <div className="min-w-0 flex-1">
-                    <h3 className="text-xl font-extrabold leading-tight text-[#1f2f71] sm:text-[1.75rem]">
+                    <h3 className="text-xl font-extrabold leading-tight text-[#1f2f71] sm:text-[1.4rem] lg:text-[1.25rem]">
                       {product.name}
                     </h3>
-                    <p className="mt-1 text-sm font-semibold text-[#54607e] sm:text-lg">
+                    <p className="mt-1 text-sm font-semibold text-[#54607e] sm:text-base lg:whitespace-nowrap">
                       {product.details}
                     </p>
-                    <p className="mt-1 text-sm font-bold text-[#3f4d73] sm:text-lg">
+                    <p className="mt-1 text-sm font-bold text-[#3f4d73] sm:text-base">
                       {product.quantity}
                     </p>
                   </div>
 
                   <div className="text-left sm:text-right">
-                    <p className="text-4xl font-extrabold leading-none text-[#1f2f70] sm:text-[2.35rem]">
+                    <p className="text-4xl font-extrabold leading-none text-[#1f2f70] sm:text-[2rem] lg:text-[1.85rem]">
                       {product.total}
                     </p>
-                    <p className="mt-2 text-lg font-bold leading-none text-[#626d8c] sm:mt-3 sm:text-2xl">
+                    <p className="mt-2 text-lg font-bold leading-none text-[#626d8c] sm:mt-3 sm:text-xl lg:text-lg">
                       {product.unit}
                     </p>
                   </div>
