@@ -100,7 +100,7 @@ export default function Home() {
 
           <div className="rounded-md bg-[#25329b] px-5 py-5 shadow-[0_12px_25px_rgba(8,14,67,0.2)] sm:px-8">
             <div className="flex flex-wrap items-center justify-between gap-4">
-              <div className="flex min-w-0 flex-1 items-center gap-6 overflow-x-auto">
+              <div className="no-scrollbar flex min-w-0 flex-1 touch-pan-x items-center gap-6 overflow-x-auto">
                 <div className="flex shrink-0 items-center gap-3">
                   <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#f2b345] text-white">
                     <Check size={16} strokeWidth={3} />
