@@ -262,8 +262,10 @@ export default function Home() {
                 Your information is Safe
               </h3>
               <p className="mx-auto mt-3 max-w-[310px] text-sm font-semibold leading-6 text-[#5a6484] sm:text-[0.95rem]">
-                <span className="block">The total cost consist of the tax,</span>
-                <span className="block">insurance and the delivery charge.</span>
+                <span className="block whitespace-nowrap">
+                  The total cost consist of the tax, insurance and
+                </span>
+                <span className="block">the delivery charge.</span>
               </p>
             </article>
 
@@ -275,8 +277,10 @@ export default function Home() {
                 Secure checkout
               </h3>
               <p className="mx-auto mt-3 max-w-[310px] text-sm font-semibold leading-6 text-[#5a6484] sm:text-[0.95rem]">
-                <span className="block">The total cost consist of the tax,</span>
-                <span className="block">insurance and the delivery charge.</span>
+                <span className="block whitespace-nowrap">
+                  The total cost consist of the tax, insurance and
+                </span>
+                <span className="block">the delivery charge.</span>
               </p>
             </article>
 
@@ -288,8 +292,10 @@ export default function Home() {
                 24/7 Support
               </h3>
               <p className="mx-auto mt-3 max-w-[310px] text-sm font-semibold leading-6 text-[#5a6484] sm:text-[0.95rem]">
-                <span className="block">The total cost consist of the tax,</span>
-                <span className="block">insurance and the delivery charge.</span>
+                <span className="block whitespace-nowrap">
+                  The total cost consist of the tax, insurance and
+                </span>
+                <span className="block">the delivery charge.</span>
               </p>
             </article>
           </div>
